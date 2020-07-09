@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>  
+
+	<!-- settings 用于设置mybatis的一些重要的键值对信息
+			name设置键，value设置值
+			常用name:
+					lazyLoadingEnabled
+					aggressiveLayLoading
+					mapUnderscoreToCamelCase  默认false（不开启）
+						可以映射数据表中以下划线分割的列名为驼峰式命名法  eg: VC_name   VCName
+	 -->
+	<settings>
+		<!-- 全局开启懒加载机制 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+
+</configuration>
